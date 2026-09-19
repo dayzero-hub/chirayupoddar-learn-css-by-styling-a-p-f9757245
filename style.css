@@ -7,8 +7,13 @@
   --font-size-body: 1rem;
   --font-size-detail: 0.875rem;
 }
+body{
+    box-sizing: border-box;
+}
 .card{
     background-color: var(--color-background);
+    padding: 10%;
+    margin: 10%;
 }
 .card__heading {
   font-size: var(--font-size-body);
@@ -34,4 +39,6 @@
   color: var(--color-text-quiet);
   text-align: left;
   font-weight: 100;
+  padding: 1%;
+    margin: 1%;
 }
