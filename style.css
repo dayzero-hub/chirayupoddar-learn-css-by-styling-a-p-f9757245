@@ -1,7 +1,32 @@
-:root{
-    color: blue;
-    background-color: aqua;
-    font-size: 50px;
-    font-weight: 300;
-    text-align: center;
+:root {
+  --color-primary: #5f259f;
+  --color-background: #f5f5f5;
+  --color-text-main: #1a1a1a;
+  --color-text-quiet: #6b6b6b;
+  --font-size-amount: 2.5rem;
+  --font-size-body: 1rem;
+  --font-size-detail: 0.875rem;
+}
+.card__heading {
+  font-size: var(--font-size-body);
+  font-weight: 500;
+  color: var(--color-primary);
+  text-align: center;
+}
+.card__status {
+  font-size: var(--font-size-body);
+  font-weight: 400;
+  color: var(--color-primary);
+  text-align: center;
+}
+.card__amount {
+  font-size: var(--font-size-amount);
+  font-weight: 700;
+  color: var(--color-primary);
+  text-align: center;
+}
+
+.card__detail {
+  font-size: var(--font-size-detail);
+  color: var(--color-text-quiet);
 }
