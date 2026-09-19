@@ -7,39 +7,61 @@
   --font-size-body: 1rem;
   --font-size-detail: 0.875rem;
 }
+
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-.card{
-    background-color: var(--color-background);
-    padding: 3rem;
-    border: 1px solid #120808;
-    margin: 2rem;
-}
-.card__heading {
-  font-size: var(--font-size-body);
-  font-weight: 500;
-  color: var(--color-primary);
-  text-align: center;
-}
-.card__status {
-  font-size: var(--font-size-body);
-  font-weight: 400;
-  color: var(--color-primary);
-  text-align: center;
-}
-.card__amount {
-  font-size: var(--font-size-amount);
-  font-weight: 700;
-  color: var(--color-primary);
+
+.card {
+  background-color: var(--color-background);
+  padding: 3rem;
+  border: 1px solid #120808;
+  margin: 2rem;
   text-align: center;
 }
 
+.card__heading {
+  display: block;
+  font-size: var(--font-size-body);
+  font-weight: 500;
+  color: var(--color-primary);
+  margin: 0 0 1rem;
+}
+
+.card__amount {
+  display: inline-block;
+  font-size: var(--font-size-amount);
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: 0;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.card__status {
+  display: inline-block;
+  font-size: var(--font-size-body);
+  font-weight: 400;
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  border-radius: 999px;
+  padding: 0.35rem 0.7rem;
+  margin: 0 0 0 0.5rem;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+/* display: none removes the element from the document flow completely. */
+.card__refunded {
+  display: none;
+}
+
 .card__detail {
+  display: block;
   font-size: var(--font-size-detail);
   color: var(--color-text-quiet);
   text-align: left;
   font-weight: 100;
-  padding: 1.5rem; 
-  margin: 2rem auto;
+  padding: 1rem 0;
+  margin: 0;
 }
