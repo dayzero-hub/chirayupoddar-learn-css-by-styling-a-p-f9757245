@@ -6,17 +6,26 @@
   --font-size-amount: 2.5rem;
   --font-size-body: 1rem;
   --font-size-detail: 0.875rem;
+  --card-radius: 16px;
 }
 
 * {
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  padding: 1rem;
+  color: var(--color-text-main);
+}
+
 .card {
-  background-color: var(--color-background);
+  max-width: 520px;
+  margin: 2rem auto;
   padding: 3rem;
+  background: var(--color-background);
   border: 1px solid #120808;
-  margin: 2rem;
+  border-radius: var(--card-radius);
   text-align: center;
 }
 
@@ -64,4 +73,41 @@
   font-weight: 100;
   padding: 1rem 0;
   margin: 0;
+}
+
+.card__button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.7rem 1.4rem;
+  border: 1px solid var(--color-primary);
+  border-radius: 8px;
+  background: var(--color-primary);
+  color: #fff;
+  font-size: var(--font-size-body);
+  cursor: pointer;
+}
+
+.card__button:hover {
+  background: #7a3fbd;
+  border-color: #7a3fbd;
+}
+
+@media (max-width: 320px) {
+  body {
+    padding: 0;
+  }
+
+  .card {
+    margin: 0;
+    padding: 2rem 1rem;
+    max-width: 100%;
+  }
+
+  .card__amount {
+    font-size: 2rem;
+  }
+
+  .card__status {
+    margin-left: 0.25rem;
+  }
 }
