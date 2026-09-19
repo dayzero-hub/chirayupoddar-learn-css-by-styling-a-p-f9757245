@@ -7,6 +7,9 @@
   --font-size-body: 1rem;
   --font-size-detail: 0.875rem;
 }
+.card{
+    background-color: var(--color-background);
+}
 .card__heading {
   font-size: var(--font-size-body);
   font-weight: 500;
@@ -29,4 +32,6 @@
 .card__detail {
   font-size: var(--font-size-detail);
   color: var(--color-text-quiet);
+  text-align: left;
+  font-weight: 100;
 }
